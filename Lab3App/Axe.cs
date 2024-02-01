@@ -10,7 +10,7 @@ namespace Lab3App
     {
         public Axe(string desc) : base(desc) {}
 
-        public override void DoAction() { base.DoAction(); }
+        public override void DoAction() {Console.WriteLine("Axe is used");}
         public override void Display()
         {
             Console.WriteLine("Axe " + this.Description + " is displayed");

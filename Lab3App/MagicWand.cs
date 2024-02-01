@@ -10,7 +10,7 @@ namespace Lab3App
     {
         public MagicWand(string desc) : base(desc) { }
 
-        public override void DoAction() { base.DoAction(); }
+        public override void DoAction() { Console.WriteLine("MagicWand is used");  }
 
         public override void Display()
         {

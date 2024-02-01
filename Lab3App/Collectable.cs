@@ -8,13 +8,14 @@ namespace Lab3App
 {
     abstract class Collectable : Displayable
     {
-        public string Description;
+        private protected string Description {  get; set; }
+
         public CollectionBoard Board;
         public Collectable(string Description) {
             this.Description = Description;
         }
 
-        
+       
 
         public abstract void AddMe(List<Collectable> collectable);
 

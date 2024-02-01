@@ -12,7 +12,7 @@ namespace Lab3App
     {
         public Tool(string Descripton) : base(Descripton) { }
 
-        public virtual void DoAction() { Console.WriteLine(this.Description + "is used"); }
+        public abstract void DoAction();
 
         public override void AddMe(List<Collectable> collectable) {
             Console.WriteLine(this.Description + " Collected, Congrats!!!!");

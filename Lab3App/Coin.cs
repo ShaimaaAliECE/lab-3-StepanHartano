@@ -11,11 +11,7 @@ namespace Lab3App
 {
     class Coin : Treasure
     {
-        private int Value
-        {
-            get;
-            set;
-        }
+        private int Value {get; set;}
 
         public Coin(string desc, int score, int value) : base(desc, score) { this.Value = value; }
             
@@ -23,7 +19,7 @@ namespace Lab3App
             base.AddMe(collectable);
             UpdateTotalValue(); 
         }
-
+        
         public override void Display() { Console.WriteLine("Coin " + this.Description + " is displayed"); }
         public void UpdateTotalValue()
         {
